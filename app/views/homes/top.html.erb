@@ -1,0 +1,8 @@
+<h1>Topページ</h1>
+
+<% @user = current_user %>
+<% if @user.name == current_user.name %>
+  <b>same user name</b>
+<% else %>
+  <b>wrong user name</b>
+<% end %>
